@@ -16,35 +16,34 @@ const Login = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    try {
-      const response = await axios.post(
-        "http://localhost:3002/login",
-        formData
-      );
+  try {
+    const response = await axios.post(
+      "https://zerodha-trading-platform-p9br.onrender.com/login",
+      formData
+    );
 
-      console.log("Login response:", response.data);
+    console.log("Login response:", response.data);
 
-      // Save logged-in user
-      localStorage.setItem(
-        "user",
-        JSON.stringify(response.data.user)
-      );
+    localStorage.setItem(
+      "user",
+      JSON.stringify(response.data.user)
+    );
 
-      setMessage("Login successful!");
+    setMessage("Login successful!");
 
-      // We will set the dashboard URL after confirming its port.
-      window.location.href = "http://localhost:3001";
-    } catch (error) {
-      console.error("Login error:", error);
+    // Redirect to deployed dashboard
+    window.location.href = "https://zerodha-trading-platformm.netlify.app/";
+  } catch (error) {
+    console.error("Login error:", error);
 
-      setMessage(
-        error.response?.data?.message || "Login failed"
-      );
-    }
-  };
+    setMessage(
+      error.response?.data?.message || "Login failed"
+    );
+  }
+};
 
   return (
     <div
