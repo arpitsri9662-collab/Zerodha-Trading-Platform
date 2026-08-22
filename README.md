@@ -7,7 +7,7 @@ The project provides a modern trading dashboard where users can view holdings, p
 
 ### 🌐 Frontend / Dashboard
 
-**[zerodha-trading-platformm.netlify.app](zerodhaa-trading-platform.netlify.app)**
+[**zerodhaa-trading-platform.netlify.app**](https://zerodhaa-trading-platform.netlify.app/)
 
 > ⚠️ This project is created for educational and portfolio purposes and is **not affiliated with or endorsed by Zerodha**.
 
@@ -412,7 +412,7 @@ It does not represent the actual Zerodha trading platform and should not be used
 
 ### 🌐 Live Project
 
-**[Visit Zerodha Trading Platform →](zerodhaa-trading-platform.netlify.app)**
+**[Visit Zerodha Trading Platform →](https://zerodhaa-trading-platform.netlify.app/)**
 
 ---
 
