@@ -12,27 +12,27 @@ function Universe() {
         </p>
 
         <div className="col-4 p-3 mt-5">
-          <img src="media/images/smallcaseLogo.png" />
+          <img src="media/images/smallcaseLogo.png" alt="Small" />
           <p className="text-small text-muted">Thematic investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/images/streakLogo.png" style={{width:"35%"}}/>
+          <img src="media/images/streakLogo.png" alt="Streak" style={{width:"35%"}}/>
           <p className="text-small text-muted">Algo & strategy platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/images/sensibullLogo.svg" style={{width:"45%"}} />
+          <img src="media/images/sensibullLogo.svg" alt="Bull" style={{width:"45%"}} />
           <p className="text-small text-muted mt-2">Options trading platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/images/zerodhaFundhouse.png" style={{width:"50%"}} />
+          <img src="media/images/zerodhaFundhouse.png" alt="FundHouse" style={{width:"50%"}} />
           <p className="text-small text-muted">Asset management</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/images/goldenpiLogo.png" style={{width:"45%"}} />
+          <img src="media/images/goldenpiLogo.png" alt="Gold" style={{width:"45%"}} />
           <p className="text-small text-muted">Bonds trading platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/images/dittoLogo.png" style={{width:"30%"}} />
+          <img src="media/images/dittoLogo.png" alt="Ditto" style={{width:"30%"}} />
           <p className="text-small text-muted mt-1">Insurance</p>
         </div>
         <Link
