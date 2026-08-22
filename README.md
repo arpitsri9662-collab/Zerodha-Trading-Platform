@@ -7,7 +7,7 @@ The project provides a modern trading dashboard where users can view holdings, p
 
 ### 🌐 Frontend / Dashboard
 
-**[zerodha-trading-platformm.netlify.app](https://zerodha-trading-platformm.netlify.app/)**
+**[zerodha-trading-platformm.netlify.app](zerodhaa-trading-platform.netlify.app)**
 
 > ⚠️ This project is created for educational and portfolio purposes and is **not affiliated with or endorsed by Zerodha**.
 
@@ -243,7 +243,7 @@ Create a `.env` file inside the backend directory:
 
 ```env
 MONGO_URL=your_mongodb_connection_string
-PORT=8080
+PORT=3002
 ```
 
 > Never upload your `.env` file or database credentials to GitHub.
@@ -299,7 +299,7 @@ Example:
 
 ```env
 MONGO_URL=mongodb+srv://USERNAME:PASSWORD@CLUSTER.mongodb.net/Zerodha
-PORT=8080
+PORT=3002
 ```
 
 Make sure `.env` is included in `.gitignore`:
@@ -412,7 +412,7 @@ It does not represent the actual Zerodha trading platform and should not be used
 
 ### 🌐 Live Project
 
-**[Visit Zerodha Trading Platform →](https://zerodha-trading-platformm.netlify.app/)**
+**[Visit Zerodha Trading Platform →](zerodhaa-trading-platform.netlify.app)**
 
 ---
 
