@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import API from "../api/axios";
 
 import "./Orders.css";
 
@@ -8,8 +8,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:3002/allOrders")
+    API.get("/allOrders")
       .then((res) => {
         setOrders(res.data);
       })

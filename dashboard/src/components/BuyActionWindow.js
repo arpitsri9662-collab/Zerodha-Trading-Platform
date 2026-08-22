@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import axios from "axios";
+import API from "../api/axios";
 
 import GeneralContext from "./GeneralContext";
 
@@ -12,14 +12,19 @@ const BuyActionWindow = ({ uid }) => {
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:3002/newOrder", {
+    API.post("/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
       mode: "BUY",
-    });
-
-    GeneralContext.closeBuyWindow();
+    })
+      .then((res) => {
+        console.log(res.data);
+        GeneralContext.closeBuyWindow();
+      })
+      .catch((err) => {
+        console.error("Order error:", err);
+      });
   };
 
   const handleCancelClick = () => {
@@ -40,6 +45,7 @@ const BuyActionWindow = ({ uid }) => {
               value={stockQuantity}
             />
           </fieldset>
+
           <fieldset>
             <legend>Price</legend>
             <input
@@ -56,11 +62,20 @@ const BuyActionWindow = ({ uid }) => {
 
       <div className="buttons">
         <span>Margin required ₹140.65</span>
+
         <div>
-          <Link className="btn btn-blue" onClick={handleBuyClick}>
+          <Link
+            className="btn btn-blue"
+            onClick={handleBuyClick}
+          >
             Buy
           </Link>
-          <Link to="" className="btn btn-grey" onClick={handleCancelClick}>
+
+          <Link
+            to=""
+            className="btn btn-grey"
+            onClick={handleCancelClick}
+          >
             Cancel
           </Link>
         </div>
